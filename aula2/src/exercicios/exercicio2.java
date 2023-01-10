@@ -10,7 +10,7 @@ public class exercicio2 {
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("Digite o seu salário: ");
-        double salario = entrada.nextInt();
+        double salario = entrada.nextDouble();
         double aumento = salario * 0.1;
         double novoSalario = salario + aumento;
         
