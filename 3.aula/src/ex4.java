@@ -9,11 +9,12 @@ public class ex4 {
         double n2 = entrada.nextDouble();
 
         double media = (n1 + n2) / 2;
-        if (media> 6){
+        if (media >= 7){
             System.out.println("Aprovado");
         }
-        else if (media < 6){
+        else if (media < 7){
             System.out.println("Reprovado");
+            System.out.println("Você irá fazer a prova final");
         }
 
     }
