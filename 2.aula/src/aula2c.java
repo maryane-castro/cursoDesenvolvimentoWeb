@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex3 {
+public class aula2c {
     public static void main(String[] args) {
         //numero elevado: 5 elevado a 2, mesmo que coloque como int, ele considera inteiro
         

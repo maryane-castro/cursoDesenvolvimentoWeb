@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex4 {
+public class aula3a {
     /*Faça um programa em que o usuário digita as duas notas de um 
         aluno e mostra se o aluno foi a */
         

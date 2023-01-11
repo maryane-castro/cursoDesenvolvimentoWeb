@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex1 {
+public class aula2a {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Digite o primeiro número: ");
