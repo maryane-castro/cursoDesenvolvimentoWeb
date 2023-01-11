@@ -10,7 +10,7 @@ public class exercicio4c {
         System.out.println("Valor total de vendas: ");
         double vendas = input.nextDouble();
         if (salario < 1500 && vendas > 2000){
-            salario = salario * 0.1;
+            salario = salario * 1.1;
             System.out.printf("Seu salário teve aumento: %f", salario);
         }else{
             System.out.println("Não teve aumento de salário.");
