@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class ex4 {
+    /*Faça um programa em que o usuário digita as duas notas de um 
+        aluno e mostra se o aluno foi a */
+        
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Digite sua nota1: ");
@@ -12,7 +15,7 @@ public class ex4 {
         if (media >= 7){
             System.out.println("Aprovado");
         }
-        else if (media < 7){
+        else{
             System.out.println("Reprovado");
             System.out.println("Você irá fazer a prova final");
         }
