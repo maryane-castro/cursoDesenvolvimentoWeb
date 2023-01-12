@@ -12,8 +12,12 @@ public class calculate {
             soma();
         } else if (aux == 2){
             sub();
-        } else if(){
+        } else if(aux == 3){
             mul();
+        } else if(aux == 4){
+            div();
+        } else{
+            System.out.println("Não existe essa opção.");
         }
     }
 
@@ -28,15 +32,33 @@ public class calculate {
     }
 
     static void sub(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("number 1: ");
+        double n1 = input.nextDouble();
+        System.out.print("number 2: ");
+        double n2 = input.nextDouble();
 
+        System.out.println(n1 - n2);
     }
 
     static void mul(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("number 1: ");
+        double n1 = input.nextDouble();
+        System.out.print("number 2: ");
+        double n2 = input.nextDouble();
 
+        System.out.println(n1 * n2);
     }
 
     static void div(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("number 1: ");
+        double n1 = input.nextDouble();
+        System.out.print("number 2: ");
+        double n2 = input.nextDouble();
 
+        System.out.println(n1 / n2);
     }
 
 
