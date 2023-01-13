@@ -1,5 +1,5 @@
+package classe;
 import java.util.Scanner;
-
 
 /*
 SET pega a string
@@ -21,7 +21,7 @@ public class Conta {
         System.out.println(teste);
         */
 
-
+   
         System.out.print("Digite uma String para ser setada: ");
         conta1.setNome(input.nextLine());
         ContChama conta2 = conta1; //obj2 recebe o valor do objj2
@@ -34,7 +34,7 @@ public class Conta {
 
         conta1.setSaldo(21);
         System.out.println(conta1.getSaldo());
-        
+      
     }
 }
 

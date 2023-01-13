@@ -1,3 +1,4 @@
+package classe;
 /*Mesma coisa em python!! */
 public class ContChama {
     private String nome;                      //criação de variaveis
