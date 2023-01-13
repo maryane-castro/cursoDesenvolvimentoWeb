@@ -19,7 +19,8 @@ public class ex5b {
         Scanner input = new Scanner(System.in);
         cons5b conta = new cons5b("Maryane", "Castro", 40000);
 
-
-
+        System.out.println(conta.getsalario());
+        conta.Aumento();
+        System.out.println(conta.getsalario());
     }
 }

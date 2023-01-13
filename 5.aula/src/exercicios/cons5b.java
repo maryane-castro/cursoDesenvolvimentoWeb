@@ -4,6 +4,7 @@ public class cons5b {
     String nomeP;
     String nomeU;
     double salario;
+    double aumento = 1.1;
 
     public cons5b(String nomeP, String nomeU, double salario){
         this.nomeP = nomeP;
@@ -46,4 +47,11 @@ public class cons5b {
     public double getsalario(){
         return salario;
     }
+
+/*-----------------Aumento-------------------- */
+    
+    public void Aumento(){
+        this.salario = salario * 1.1;
+    }
+
 }
