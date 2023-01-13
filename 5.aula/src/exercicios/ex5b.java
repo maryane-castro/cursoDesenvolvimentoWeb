@@ -12,8 +12,14 @@ empregados novamente. */
 
 package exercicios;
 
+import java.util.Scanner;
+
 public class ex5b {
     public static void main(String[] args) {
-        
+        Scanner input = new Scanner(System.in);
+        cons5b conta = new cons5b("Maryane", "Castro", 40000);
+
+
+
     }
 }
