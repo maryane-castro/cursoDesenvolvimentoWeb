@@ -30,9 +30,6 @@ public class cons5b {
     public void setSalario(double salario){
         this.salario = salario;
     }
-
-
-
     
 /***********GETTER**********************/
 

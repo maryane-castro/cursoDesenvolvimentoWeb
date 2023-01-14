@@ -17,10 +17,23 @@ import java.util.Scanner;
 public class ex5b {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        cons5b conta = new cons5b("Maryane", "Castro", 40000);
+        cons5b conta1 = new cons5b("Maryane", "Castro", 40000); //user1
 
-        System.out.println(conta.getsalario());
-        conta.Aumento();
-        System.out.println(conta.getsalario());
+        cons5b conta2 = new cons5b("Mara", "Célia", 0); //user2
+
+
+        System.out.printf("Primeiro Nome: %s%nUltimo Nome: %s%nSalário: %.2f%n", conta1.getnomeP(), conta1.getnomeU(), conta1.getsalario());
+        
+        System.out.printf("Primeiro Nome: %s%nUltimo Nome: %s%nSalário: %.2f%n", conta2.getnomeP(), conta2.getnomeU(), conta2.getsalario());
+
+
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+
+        conta1.Aumento();
+        conta2.Aumento();
+
+        System.out.printf("Novo salário user1: %f%n", conta1.getsalario());
+        System.out.printf("Novo salário user2: %f%n", conta2.getsalario());
+
     }
 }
