@@ -35,6 +35,11 @@ public class App { //AULA DE MANIPULAÇÃO DE STRINGS
         /*
           latter.indexOf
           latter.lastIndexOf   pesquisa
+
+          concat - concatena
+
+
+          link de manipulação de stringw3 schools: https://www.w3schools.com/java/java_ref_string.asp
          */
     }
 }
