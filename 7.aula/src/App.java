@@ -1,4 +1,4 @@
-public class App {
+public class App { //AULA DE MANIPULAÇÃO DE STRINGS
     public static void main(String[] args) {
         String s3 = "Happy Birthday";
         String s4 = "happy birthday";
