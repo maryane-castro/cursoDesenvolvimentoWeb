@@ -31,5 +31,10 @@ public class App { //AULA DE MANIPULAÇÃO DE STRINGS
         if (s1.endsWith("ed")){
             System.out.println("verdadeiro");
         }
+
+        /*
+          latter.indexOf
+          latter.lastIndexOf   pesquisa
+         */
     }
 }
