@@ -37,7 +37,12 @@ public class App { //AULA DE MANIPULAÇÃO DE STRINGS
           latter.lastIndexOf   pesquisa
 
           concat - concatena
-
+          
+          ele troca uma coisa por outra (REPLACE)
+          deixa tudo em maiusculo (toUpperCase)
+          deixa tudo em minusculo(toLowerCase)
+          retira os espaços (trim)
+          
 
           link de manipulação de stringw3 schools: https://www.w3schools.com/java/java_ref_string.asp
          */
