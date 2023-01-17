@@ -7,7 +7,7 @@ public class exercicio4a {
         Scanner input = new Scanner(System.in);
 
         int num;
-
+        
         System.out.print("Digite um número para saber o módulo: ");
         num = input.nextInt();
 
