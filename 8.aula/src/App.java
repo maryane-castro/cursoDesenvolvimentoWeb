@@ -1,11 +1,9 @@
 import java.util.Scanner;
 
 public class App {
-    /**
-     * @param args
-     * @throws Exception
-     */
+    
     public static void main(String[] args)  {
+        /* 
         int num = 1;
         do {
             System.out.println(num);
@@ -28,7 +26,7 @@ public class App {
         int i;
         for (i = 0; i <= 10; i++){
             System.out.println(i);
-        }
+        }*/
         
 
         Scanner input = new Scanner(System.in);
@@ -40,6 +38,7 @@ public class App {
             System.out.print("Digite um número válido:");
             funcionario = input.nextInt();
         }
+       
         int aux = 1;
         double media = 0;
         
@@ -66,7 +65,7 @@ public class App {
 
 
         System.out.printf("%nMédia do valor de vendas foi: %.2f%n%n", media);
-        System.out.print(melhorvendedor);
+        System.out.print(melhorvendedor); 
 
         while (true) {
             System.out.println("ok");
