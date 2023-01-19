@@ -6,7 +6,7 @@ public class App {
      * @throws Exception
      */
     public static void main(String[] args)  {
-        /*int num = 1;
+        int num = 1;
         do {
             System.out.println(num);
             ++num;
@@ -29,7 +29,7 @@ public class App {
         for (i = 0; i <= 10; i++){
             System.out.println(i);
         }
-        */
+        
 
         Scanner input = new Scanner(System.in);
         
@@ -49,7 +49,7 @@ public class App {
             System.out.printf("Valor das vendas do funcionario %d: ", aux);
             double vendas = input.nextDouble();
 
-            /*System.out.printf("O valor de vendas do vendedor %d foi: %.2f%n", aux, vendas);*/
+            System.out.printf("O valor de vendas do vendedor %d foi: %.2f%n", aux, vendas);
             media = media + vendas;
             
             if (aux == 1){
@@ -61,11 +61,16 @@ public class App {
             }
             ++aux;
         }
+        
 
 
 
         System.out.printf("%nMédia do valor de vendas foi: %.2f%n%n", media);
         System.out.print(melhorvendedor);
+
+        while (true) {
+            System.out.println("ok");
+        }
         
         
         
