@@ -5,7 +5,7 @@ public class ex1 {
         int quantidade = 0;
         int num = 0;
         int soma = 0;
-        int contaPares = 0;
+        double contaPares = 0;
         while (num != -1){
             Scanner input = new Scanner(System.in);
             System.out.print("Digite um número para dizer se é par ou não: ");
@@ -26,5 +26,6 @@ public class ex1 {
 
         
         System.out.printf("A soma dos pares é %d, e a quantidade de pares escritos foram %d", soma, contaPares );
+        System.out.printf("A média desses número é: %f", (soma/contaPares));
     }
 }
