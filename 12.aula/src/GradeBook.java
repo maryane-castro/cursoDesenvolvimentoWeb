@@ -22,4 +22,24 @@ public class GradeBook {
 
         return somaNotas / notasAlunos.length;
     }
+
+    public double getMenorNota(){
+        double menorNota = notasAlunos[0];
+        for(double nota : notasAlunos){
+            if (menorNota < nota){
+                menorNota = nota;
+            }
+        }
+        return menorNota;
+    }
+
+    public double getMaiorNota(){
+        double maiorNota = notasAlunos[0];
+        for (double nota : notasAlunos){
+            if (maiorNota < nota){
+                maiorNota = nota;
+            }
+        }
+        return maiorNota;
+    }
 }
