@@ -57,7 +57,7 @@ public class GradeBook {
 
     /*DISTRIBUIÇÃO */
 
-    public void motraDistribuicaoNotas(){
+    public void getDistribuicaoNotas(){
         int [] frequenciaFaixasNotas = new int [10];
 
         for (double nota : notasAlunos){
@@ -83,6 +83,16 @@ public class GradeBook {
                 frequenciaFaixasNotas[9]++;
             }
         }
+        motraDistribuicaoNotas(frequenciaFaixasNotas);
+    }
+
+
+    private void motraDistribuicaoNotas(int [] frequenciaNotas){
+        for (int i = 0; i < frequenciaNotas.length; i++){
+            System.out.printf("Quantidade de notas entre %d e %d: %d", i, i+1, frequenciaNotas[i]);
+        }
+
+
     }
 
     
