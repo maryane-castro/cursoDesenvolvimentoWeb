@@ -64,7 +64,7 @@ public class GradeBook {
     /*DISTRIBUIÇÃO */
 
     public void getDistribuicaoNotas(){
-        int [] frequenciaFaixasNotas = new int [quantidadeDeNotas];
+        int [] frequenciaFaixasNotas = new int [10];
 
         for (double nota : notasAlunos){
             if (0 <= nota && nota < 1){
