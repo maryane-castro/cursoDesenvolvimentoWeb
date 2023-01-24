@@ -120,5 +120,16 @@ public class GradeBook {
         }
     }
 
+
+    public void relatorio(){
+        mostraNotas();
+        System.out.println("\n");
+        System.out.printf("MÉDIA DA TURMA %.2f%n", this.getMediaTurma());
+        System.out.printf("MAIOR NOTA DA TURMA %.2f%n", this.getMaiorNota());
+        System.out.printf("MENOR NOTA DA TURMA %.2f%n", this.getMenorNota());
+        getDistribuicaoNotas();
+        
+    }
+
     
 }
