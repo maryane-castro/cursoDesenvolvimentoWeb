@@ -28,6 +28,6 @@ public class App {
 
 
         cursoJava.getDistribuicaoNotas();
-
+        cursoJava.relatorio();
     }
 }
