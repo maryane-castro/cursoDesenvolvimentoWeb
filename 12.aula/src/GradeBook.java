@@ -2,6 +2,7 @@ public class GradeBook {
 
     private String nomeCurso;
     private double [] notasAlunos;
+    
 
     /*private int umDois = 0;
     private int doisTres = 0;
@@ -13,6 +14,11 @@ public class GradeBook {
     private int oitoNove = 0;
     private int noveDez = 0;
     private int zeroUm = 0;*/
+
+    public GradeBook (String nomeCurso, double [] notasAlunos){ //contrutor necessita ter o mesmo nome da class e dizer os atributos obrigatorios.
+        this.nomeCurso = nomeCurso;
+        this.notasAlunos = notasAlunos;
+    }
 
 
     public String getNomeCurso(){
@@ -58,7 +64,7 @@ public class GradeBook {
     /*DISTRIBUIÇÃO */
 
     public void getDistribuicaoNotas(){
-        int [] frequenciaFaixasNotas = new int [10];
+        int [] frequenciaFaixasNotas = new int [quantidadeDeNotas];
 
         for (double nota : notasAlunos){
             if (0 <= nota && nota < 1){
