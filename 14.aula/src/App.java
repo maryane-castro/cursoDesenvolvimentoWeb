@@ -14,7 +14,7 @@ public class App {
         t4.mostraTempo();
         t5.mostraTempo();
 
-        t5.setHora(32);
+
         t5.mostraTempo();
 
     }
