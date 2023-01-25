@@ -22,10 +22,16 @@ public class TimeCustom {
     }
 
 
-    public TimeCustom(int hour, int minute, int second) {
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
+    public TimeCustom(int hour, int minute, int second) { //fiz tratamento de erro
+        if (hour >= 0 && hour <= 23){
+            this.hour = hour;
+        }
+        if (minute >= 0 && minute <= 59){
+            this.minute = minute;
+        }
+        if (second >= 0 && second <= 59){
+            this.second = second;
+        }
     }
 
 
@@ -33,7 +39,7 @@ public class TimeCustom {
     public TimeCustom(TimeCustom time) {
         this(time.hour, time.minute, time.second);
     }
-    
+
 
 
     public void mostraTempo(){
