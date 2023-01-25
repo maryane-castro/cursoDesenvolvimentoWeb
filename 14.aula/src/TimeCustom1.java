@@ -1,3 +1,6 @@
+//complementar da class TimeCustom, porem fica apenas no final do codigo!
+
+
 public class TimeCustom1 {
     private int segundosDoDia; // 0 - 86400
 
