@@ -1,10 +1,18 @@
+
 public class App {
     public static void main(String[] args) {
-       TimeCustom time1 = new TimeCustom();
-       time1.mostraTempo();
 
+        TimeCustom t1 = new TimeCustom(); 
+        TimeCustom t2 = new TimeCustom(2);
+        TimeCustom t3 = new TimeCustom(21, 34);
+        TimeCustom t4 = new TimeCustom(12, 25, 42);
+        TimeCustom t5 = new TimeCustom(t4);
 
-       TimeCustom time2 = new TimeCustom(5);
-       time2.mostraTempo();
+        t1.mostraTempo();
+        t2.mostraTempo();
+        t3.mostraTempo();
+        t4.mostraTempo();
+        t5.mostraTempo();
+
     }
 }
