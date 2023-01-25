@@ -46,8 +46,17 @@ public class TimeCustom {
         System.out.printf("Hora armazenada: %d:%d:%d %n", hour, minute, second);
     }
 
+    /* 
     public void setHora(int hour){
         this.hour = hour;
+    }
+    */
+
+
+    public void setHour(int hour){  //setar a hora
+        if (hour >= 0 && hour <= 23){
+            this.hour = hour;
+        }
     }
 
 }
