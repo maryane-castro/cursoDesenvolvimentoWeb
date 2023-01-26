@@ -20,7 +20,7 @@ public class EmpregadoComissao {
         public double getComissionRate() {return commissionRate;}
         
         
-        @Override // indicates that this method overrides a superclass method
+        @Override // quer fazer substituição da classe, mas ele ajuda a não errar nessas mudanças, AJUDA A GENTE ERRAR MENOS
         public String toString() {
          return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", "commission employee", 
         firstName, lastName, "social security number", socialSecurityNumber, "total sales", 
