@@ -21,7 +21,7 @@ public class EmpregadoBaseMaisComissao extends EmpregadoComissao {
     public double earnings() {
     // not allowed: commissionRate and grossSales private in superclass
     // only public and protected members are directly accessible in the subclass
-    return baseSalary + (commissionRate * sales);
+    return baseSalary + (getCommissionRate() * getSales());
     } // the same problem occurs in method toString. We could use public get methods inherited 
     // from superclasses
 }
