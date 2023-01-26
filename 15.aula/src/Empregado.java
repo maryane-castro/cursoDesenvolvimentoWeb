@@ -3,6 +3,8 @@ public class Empregado {
     private String lastName;
     private final Data birthDate;
     private final Data hireDate;
+
+    private int id;
     
     
     
@@ -11,6 +13,15 @@ public class Empregado {
         this.lastName = lastName;
         this.birthDate = birthDate;
         this.hireDate = hireDate;
+        this.id = id;
+    }
+
+    public Empregado(Empregado funcionario){
+        firstName = funcionario.firstName;
+        lastName = funcionario.lastName;
+        birthDate = funcionario.birthDate;
+        hireDate = funcionario.hireDate;   
+        id = funcionario.id;
     }
 
     public String getFirstName(){
