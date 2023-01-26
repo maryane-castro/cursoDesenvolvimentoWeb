@@ -8,7 +8,7 @@ public class Empregado {
     
     
     
-    public Empregado(String firstName, String lastName, Data birthDate, Data hireDate) {
+    public Empregado(String firstName, String lastName, Data birthDate, Data hireDate, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
