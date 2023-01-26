@@ -15,9 +15,9 @@ public class EmpregadoComissao {
         }
         public String getFirstName() {return firstName;}
         public String getLastName() {return lastName;}
-        public String getSecurityNumber() {return socialSecurityNumber;}
-        public double getSale() {return sales;}
-        public double getComissionRate() {return commissionRate;}
+        public String getSocialSecurityNumber() {return socialSecurityNumber;}
+        public double getSales() {return sales;}
+        public double getCommissionRate() {return commissionRate;}
         
         
         @Override // quer fazer substituição da classe, mas ele ajuda a não errar nessas mudanças, AJUDA A GENTE ERRAR MENOS
