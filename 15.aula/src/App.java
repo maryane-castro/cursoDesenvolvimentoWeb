@@ -8,8 +8,12 @@ public class App {
         Empregado func1 = new Empregado("Thiago", "Rocha", dataNascimento, dataContratacao, 243);
 
         Empregado funcNew = new Empregado(func1);
+        funcNew.setId(123);;
+        funcNew.setLastName("Alves");
+        funcNew.setHireDate( new Data (5,26,2063));
 
         System.out.printf("Funcionario: %s%n", func1);
+        System.out.printf("Funcionario: %s%n", funcNew);
     }
 }
 

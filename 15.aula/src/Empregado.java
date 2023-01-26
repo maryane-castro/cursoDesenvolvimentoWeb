@@ -2,7 +2,7 @@ public class Empregado {
     private final String firstName;
     private String lastName;
     private final Data birthDate;
-    private final Data hireDate;
+    private Data hireDate;
 
     private int id;
     
@@ -37,10 +37,19 @@ public class Empregado {
         lastName = newLastName;
     }
 
+    public void setHireDate(Data newHireDate){
+        hireDate = newHireDate;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+
 
     public String toString() {
-    return String.format("%s, %s Hired: %s Birthday: %s", lastName, firstName, hireDate, 
-    birthDate);
+    return String.format("%s, %s Hired: %s Birthday: %s,  %d", lastName, firstName, hireDate, 
+    birthDate, id);
      }
 
      
