@@ -1,25 +1,27 @@
-public class EmpregadoBaseMaisComissao {
-    private final String firstName;
-private final String lastName;
-private final String socialSecurityNumber;
-private double sales; // total weekly sales
- private double commissionRate; // commission percentage10
-private double baseSalary; // base salary per week
-public EmpregadoBaseMaisComissao(String firstName, String lastName, String socialSecurityNumber, double sales,
- double commissionRate, double baseSalary) {
- this.firstName = firstName;
- this.lastName = lastName;
- this.socialSecurityNumber = socialSecurityNumber;
- this.sales = sales;
- this.commissionRate = commissionRate;
- this.baseSalary = baseSalary;
- }
- public String getFirstName() {return firstName;}
- public String getLastName() {return lastName;} // . . . // outros métodos
- @Override
- public String toString() {
- return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f", "base-salaried commission employee",
- firstName, lastName, "social security number", socialSecurityNumber, "total sales", sales,
- "commission rate", commissionRate, "base salary", baseSalary);
- }
+public class EmpregadoBaseMaisComissao extends EmpregadoComissao {
+    private double baseSalary;
+
+    public EmpregadoBaseMaisComissao(String firstName, String lastName, 
+        String socialSecurityNumber, double grossSales, 
+        double commissionRate, double baseSalary) {
+
+
+
+    // explicit call to superclass constructor
+    // needed when superclass does not have a no-argument constructor
+    super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate); //da outra classe (Empregado Comissão)
+    this.baseSalary = baseSalary; //atributo unico dessa classe
+    }
+
+    public void setBaseSalary(double newBaseSalary){
+        baseSalary = newBaseSalary;
+    }
+
+    @Override
+    public double earnings() {
+    // not allowed: commissionRate and grossSales private in superclass
+    // only public and protected members are directly accessible in the subclass
+    return baseSalary + (commissionRate * sales);
+    } // the same problem occurs in method toString. We could use public get methods inherited 
+    // from superclasses
 }

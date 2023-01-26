@@ -18,6 +18,11 @@ public class EmpregadoComissao {
         public String getSocialSecurityNumber() {return socialSecurityNumber;}
         public double getSales() {return sales;}
         public double getCommissionRate() {return commissionRate;}
+
+        public double earnings(){
+            return sales * commissionRate;
+        }
+        
         
         
         @Override // quer fazer substituição da classe, mas ele ajuda a não errar nessas mudanças, AJUDA A GENTE ERRAR MENOS
