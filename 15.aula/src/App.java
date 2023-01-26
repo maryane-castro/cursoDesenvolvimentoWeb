@@ -14,6 +14,16 @@ public class App {
 
         System.out.printf("Funcionario: %s%n", func1);
         System.out.printf("Funcionario: %s%n", funcNew);
+
+
+
+        Empregado funcNew1 = new Empregado(func1);
+        funcNew.setId(15423);;
+        funcNew.setLastName("fd");
+        funcNew.setHireDate( new Data (5,2556,2063));
+
+        System.out.printf("Funcionario: %s%n", func1);
+        System.out.printf("Funcionario: %s%n", funcNew);
     }
 }
 

@@ -16,7 +16,7 @@ public class Empregado {
         this.id = id;
     }
 
-    public Empregado(Empregado funcionario){
+    public Empregado(Empregado funcionario){ //copia de funcionario
         firstName = funcionario.firstName;
         lastName = funcionario.lastName;
         birthDate = funcionario.birthDate;

@@ -1,0 +1,18 @@
+copia
+
+
+/*public Empregado(String firstName, String lastName, Data birthDate, Data hireDate, int id) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+        this.hireDate = hireDate;
+        this.id = id;
+    }
+
+public Empregado(Empregado funcionario){ //copia de funcionario
+        firstName = funcionario.firstName;
+        lastName = funcionario.lastName;
+        birthDate = funcionario.birthDate;
+        hireDate = funcionario.hireDate;   
+        id = funcionario.id;
+    }*/
